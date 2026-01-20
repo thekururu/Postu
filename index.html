@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Postulación Staff</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Postulación Staff</h1>
+    <form id="staffForm">
+
+        <!-- Step wizard -->
+        <div class="step active">
+            <label>Nombre completo / Nickname</label>
+            <input type="text" name="nombre" required>
+        </div>
+
+        <div class="step">
+            <label>Edad</label>
+            <input type="number" name="edad" required>
+        </div>
+
+        <div class="step">
+            <label>Zona horaria / País</label>
+            <input type="text" name="zona" required>
+        </div>
+
+        <div class="step">
+            <label>Correo electrónico</label>
+            <input type="email" name="correo" required>
+        </div>
+
+        <div class="step">
+            <label>Link a tu perfil (Discord, redes, etc.)</label>
+            <input type="url" name="perfil">
+        </div>
+
+        <div class="step">
+            <label>¿Has sido staff antes? Describe tu experiencia</label>
+            <textarea name="experiencia" rows="3"></textarea>
+        </div>
+
+        <div class="step">
+            <label>Roles de staff que has desempeñado</label>
+            <textarea name="roles" rows="2"></textarea>
+        </div>
+
+        <div class="step">
+            <label>Habilidades que puedes aportar</label>
+            <textarea name="habilidades" rows="2"></textarea>
+        </div>
+
+        <div class="step">
+            <label>Horas a la semana disponibles</label>
+            <input type="text" name="horas">
+        </div>
+
+        <div class="step">
+            <label>¿Por qué quieres ser staff?</label>
+            <textarea name="motivacion" rows="3"></textarea>
+        </div>
+
+        <div class="step">
+            <label>Valor que más aprecias en un equipo</label>
+            <input type="text" name="valor">
+        </div>
+
+        <div class="step">
+            <label>¿Aceptas cumplir con las normas y decisiones del staff?</label>
+            <input type="checkbox" name="normas" required>
+        </div>
+
+        <div class="step">
+            <label>¿Aceptas que tu información se use solo para fines de selección?</label>
+            <input type="checkbox" name="usoInfo" required>
+        </div>
+
+        <div class="buttons">
+            <button type="button" id="prevBtn">Anterior</button>
+            <button type="button" id="nextBtn">Siguiente</button>
+        </div>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
